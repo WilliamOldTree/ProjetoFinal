@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        html,
+        body,
+        header {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Roboto";
+        }
+
+
+        #nav-itens {
+            background-color: darkgreen;
+            height: 80px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0px 30px;
+            font-weight: 50;
+
+        }
+
+        #nav-itens h3 {
+            font-weight: 800;
+            margin: 0px;
+        }
+
+
+        #nav-itens a {
+            margin-right: 15px;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        #nav-itens ul {
+            margin: 0px;
+        }
+
+        #btn-cadastrar {
+            margin-top: 30px;
+
+        }
+
+        #cabecalho-pagina h1 {
+            justify-content: center;
+            display: flex;
+            font-weight: 1000;
+            margin-top: 30px;
+
+        }
+
+        #table {
+            margin-top: 40px;
+        }
+
+        #link-duplo a {
+            margin-right: 20px;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-fluid" id="nav-itens">
+            <a href="">
+                <h3>Raia Drogasil</h3>
+            </a>
+            <div>
+                <ul>
+                    <a href="">Usuario</a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="cabecalho-pagina">
+            <h1>Lista de usuario</h1>
+        </div>
+        
+        <div class="container" id="btn-cadastrar">
+            <hr>
+            <a href="./cadastro.html" class="btn btn-primary">Adicionar Usuario</a>
+        </div>
+
+        <div class="container" id="table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Pais</th>
+                        <th scope="col">Acões</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Rafael</td>
+                        <td>rafael@teste.com</td>
+                        <td>Brasil</td>
+                        <td id="link-duplo"><a href="">Alterar</a><a href="">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Leonardo</td>
+                        <td>leonardo@teste.com</td>
+                        <td>Brasil</td>
+                        <td id="link-duplo"><a href="">Alterar</a><a href="">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Ivo</td>
+                        <td>ivo@teste.com</td>
+                        <td>Brasil</td>
+                        <td id="link-duplo"><a href="">Altera</a><a href="">Remover</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
